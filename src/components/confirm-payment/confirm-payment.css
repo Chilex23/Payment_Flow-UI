@@ -8,7 +8,7 @@
 
 .details-header {
   display: flex;
-  justify-content: space-between;    
+  justify-content: space-between;
   background-color: #2f80ed;
   color: #ffffff;
   border-radius: 10px 10px 0px 0px;
@@ -24,7 +24,8 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3rem;
-  border-bottom: 1px solid #817E9E;;
+  border-bottom: 1px solid #817E9E;
+  ;
   margin: 3rem 3rem;
 }
 
@@ -36,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 .details-total {
@@ -54,17 +56,26 @@
   flex-basis: 100%;
   justify-content: space-between;
   padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 .total span:first-child {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .total span:last-child {
   color: #4E598C;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+}
+
+@media only screen and (max-width: 28.15em) {
+  .details-body {
+    padding: 0 1rem;
+  }
+
+  .details-header {
+    padding: 2rem 5rem;
+  }
 }

@@ -25,10 +25,11 @@
 }
 
 .group-select select {
-	height: 3.5rem;
+	height: 4rem;
 }
 
-.form-group label, .form-group-row label {
+.form-group label,
+.form-group-row label {
 	color: black;
 	font-size: 1.4rem;
 	margin-bottom: 1rem;
@@ -37,18 +38,22 @@
 	line-height: 30px;
 }
 
-.form-group input, .form-group select {
-	height: 3.5rem;
+.form-group input,
+.form-group select {
+	height: 4rem;
 	border-radius: 5px;
+	font-size: 1.4rem;
 	border: none;
 	border: 1px solid var(--tab-color);
 	background-color: #FFFFFF;
+	padding: 0 1rem;
 }
 
 .form-button {
 	background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
 	color: #F7F7FF;
 	font-weight: 700;
+	font-size: 1.6rem;
 	border-radius: 10px;
 	padding: 1.5rem 7rem;
 	margin-top: 5rem;
@@ -63,14 +68,38 @@
 	border: none;
 	margin-left: 10rem;
 	font-weight: 700;
+	font-size: 1.6rem;
 }
 
 .required {
- 	color: red;
+	color: red;
+}
+
+.error {
+	color: red;
+	margin-top: .5rem;
+	font-size: 1.2rem;
 }
 
 .tip {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 	color: rgb(80, 79, 79);
+}
+
+
+@media only screen and (max-width: 28.15em) {
+
+	.form-button,
+	.cancel-btn {
+		font-size: 1.4rem;
+	}
+
+	.form-button {
+		padding: 1.5rem 5rem;
+	}
+
+	.cancel-btn {
+		margin-left: 5rem;
+	}
 }

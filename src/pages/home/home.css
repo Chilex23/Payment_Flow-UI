@@ -1,9 +1,7 @@
 .overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(242, 201, 76, 0.2) 0%,
-    rgba(242, 153, 74, 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(242, 201, 76, 0.2) 0%,
+      rgba(242, 153, 74, 0.2) 100%);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
@@ -16,14 +14,14 @@
   color: #4e598c;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 3rem;
+  line-height: 2rem;
 }
 
 .form-body {
   width: 50%;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 10rem;
   position: relative;
   z-index: 10;
@@ -33,9 +31,14 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-bottom: 1px solid black;
   position: relative;
+}
+
+.tab-item {
+  position: relative;
+  cursor: pointer;
 }
 
 .tab {
@@ -43,7 +46,6 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 3rem;
-  cursor: pointer;
 }
 
 .tab-selected {
@@ -55,11 +57,30 @@
   position: absolute;
   top: 3.7rem;
   height: 0.8rem;
-  width: 10rem;
+  width: 100%;
   border-radius: 5px;
   background-color: #f2994a;
 }
 
 .tab:not(:last-child) {
   margin-right: 5rem;
+}
+
+/* bp-medium: 43.75em; //700px */
+/* bp-smallest: 28.15em; //450px */
+
+@media only screen and (max-width: 43.75em) {
+  .form-body {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 28.15em) {
+  .form-body {
+    width: 95%;
+  }
+
+  .tab {
+    font-size: 1.4rem;
+  }
 }

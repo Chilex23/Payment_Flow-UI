@@ -1,8 +1,11 @@
+/* bp-large: 59.375em; //950px */
+/* bp-medium: 43.75em; //700px */
+/* bp-smallest: 28.15em; //450px */
+
 :root {
   --heading-color: #4E598C;
-  --tab-color: #BDBDBD;;
+  --tab-color: #BDBDBD;
   --tab-color-active: #F2994A;
-
 }
 
 button {
@@ -25,6 +28,11 @@ html {
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}

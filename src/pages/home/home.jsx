@@ -24,24 +24,28 @@ const Home = () => {
         <div className="form-body">
           <h1 className="header-1">Complete your purchase</h1>
           <div className="tab-container">
-            <span
-              className={`tab ${!personalPageHidden ? "tab-selected" : ""}`}
-              onClick={setPersonalPage}
-            >
-              Personal Info
-            </span>
-            <span
-              className={`tab ${!billingInfoHidden ? "tab-selected" : ""}`}
-              onClick={setBilllingPage}
-            >
-              Billing Info
-            </span>
-            <span
-              className={`tab ${!paymentPageHidden ? "tab-selected" : ""}`}
-              onClick={setConfirmPage}
-            >
-              Complete Payment
-            </span>
+            <div className="tab-item" onClick={setPersonalPage}>
+              <span
+                className={`tab ${!personalPageHidden ? "tab-selected" : ""}`}
+              >
+                Personal Info
+              </span>
+            </div>
+            <div className="tab-item" onClick={setBilllingPage}>
+              <span
+                className={`tab ${!billingInfoHidden ? "tab-selected" : ""}`}
+              >
+                Billing Info
+              </span>
+            </div>
+
+            <div className="tab-item" onClick={setConfirmPage}>
+              <span
+                className={`tab ${!paymentPageHidden ? "tab-selected" : ""}`}
+              >
+                Complete Payment
+              </span>
+            </div>
           </div>
           {personalPageHidden ? null : <PersonalInfo />}
           {billingInfoHidden ? null : <BillingInfo />}

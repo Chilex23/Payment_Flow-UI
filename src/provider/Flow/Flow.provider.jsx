@@ -8,7 +8,7 @@ export const FlowContext = createContext({
   setPersonalPage: () => {},
   setBilllingPage: () => {},
   setConfirmPage: () => {},
-  setSuccessfullPage: () => {}
+  setSuccessfullPage: () => {},
 });
 
 const FlowProvider = ({ children }) => {
@@ -22,28 +22,28 @@ const FlowProvider = ({ children }) => {
     setBillingInfoHidden(true);
     setPaymentPageHidden(true);
     setSuccessfullPageHidden(true);
-  }
+  };
 
   const setBilllingPage = () => {
     setBillingInfoHidden(false);
     setPersonalPageHidden(true);
     setPaymentPageHidden(true);
     setSuccessfullPageHidden(true);
-  }
+  };
 
   const setConfirmPage = () => {
     setPaymentPageHidden(false);
     setBillingInfoHidden(true);
     setPersonalPageHidden(true);
     setSuccessfullPageHidden(true);
-  }
+  };
 
   const setSuccessfullPage = () => {
     setSuccessfullPageHidden(false);
     setPaymentPageHidden(true);
     setBillingInfoHidden(true);
     setPersonalPageHidden(true);
-  }
+  };
 
   return (
     <FlowContext.Provider
@@ -55,7 +55,7 @@ const FlowProvider = ({ children }) => {
         setPersonalPage,
         setBilllingPage,
         setConfirmPage,
-        setSuccessfullPage
+        setSuccessfullPage,
       }}
     >
       {children}

@@ -1,20 +1,20 @@
-import React, { useContext }  from "react";
+import React, { useContext } from "react";
 import { FlowContext } from "../../provider/Flow/Flow.provider";
 import "./confirm-payment.css";
 
 const ConfirmPayment = () => {
-    const {setSuccessfullPage} = useContext(FlowContext);
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Go to the success page
-        setSuccessfullPage();
-    }
+  const { setSuccessfullPage } = useContext(FlowContext);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Go to the success page
+    setSuccessfullPage();
+  };
   return (
     <>
       <div className="confirm-container">
         <div className="details-header">
           <span>Item Name</span>
-          <span>N Price</span>
+          <span>&#8358; Price</span>
         </div>
         <div className="details-body">
           <div className="item">
@@ -33,7 +33,9 @@ const ConfirmPayment = () => {
           </div>
         </div>
       </div>
-      <button className="form-button" onClick={handleSubmit}>Pay</button>
+      <button className="form-button" onClick={handleSubmit}>
+        Pay
+      </button>
       <button className="cancel-btn">Cancel Payment</button>
     </>
   );

@@ -1,6 +1,6 @@
-import './App.css';
-import Home from './pages/home/home';
-import FlowProvider from './provider/Flow/Flow.provider';
+import "./App.css";
+import Home from "./pages/home/home";
+import FlowProvider from "./provider/Flow/Flow.provider";
 
 function App() {
   return (

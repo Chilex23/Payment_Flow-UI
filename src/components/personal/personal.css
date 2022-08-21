@@ -1,0 +1,76 @@
+.home-form {
+	margin-top: 2rem;
+	position: relative;
+	z-index: 10;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+}
+
+.form-group-row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+.group-input {
+	width: 60%;
+}
+
+.group-select {
+	width: 35%;
+}
+
+.group-select select {
+	height: 3.5rem;
+}
+
+.form-group label, .form-group-row label {
+	color: black;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.form-group input, .form-group select {
+	height: 3.5rem;
+	border-radius: 5px;
+	border: none;
+	border: 1px solid var(--tab-color);
+	background-color: #FFFFFF;
+}
+
+.form-button {
+	background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+	color: #F7F7FF;
+	font-weight: 700;
+	border-radius: 10px;
+	padding: 1.5rem 7rem;
+	margin-top: 5rem;
+	outline: none;
+	border: none;
+}
+
+.cancel-btn {
+	color: var(--heading-color);
+	background: transparent;
+	outline: none;
+	border: none;
+	margin-left: 10rem;
+	font-weight: 700;
+}
+
+.required {
+ 	color: red;
+}
+
+.tip {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	color: rgb(80, 79, 79);
+}

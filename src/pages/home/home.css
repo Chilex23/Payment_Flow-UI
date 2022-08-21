@@ -1,0 +1,65 @@
+.overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(242, 201, 76, 0.2) 0%,
+    rgba(242, 153, 74, 0.2) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 43%, 0% 100%);
+  position: fixed;
+  width: 100%;
+}
+
+.header-1 {
+  color: #4e598c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.form-body {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+  position: relative;
+  z-index: 10;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.tab {
+  color: var(--tab-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+.tab-selected {
+  color: #f2994a;
+}
+
+.tab-selected::before {
+  content: "";
+  position: absolute;
+  top: 3.7rem;
+  height: 0.8rem;
+  width: 10rem;
+  border-radius: 5px;
+  background-color: #f2994a;
+}
+
+.tab:not(:last-child) {
+  margin-right: 5rem;
+}

@@ -1,0 +1,31 @@
+.card-details {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details-item label {
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.card-details-item input {
+  height: 3.5rem;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid var(--tab-color);
+  background-color: #ffffff;
+}
+
+.card-details-item-1 {
+    width: 50%;
+}
